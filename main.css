@@ -18,25 +18,69 @@ a:hover{
 }
 
 h1{
-    text-align: left;
+    text-align: center;
 }
 body{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
     text-align: center;
 }
 
+.borders {
+    position: relative;
+    border: 5px solid #f00;
+  }
+  .borders:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 5px solid #555;
+  }
 p:first-letter{
     float:left;
     color:black;
     font-size:250%;
    }
+body {
+    height: 200px;
+    margin: 0 0 20px 0;
+    background-color: #eaeaea;
+    background-size: 20px 20px;
+    background-image:
+       -webkit-repeating-linear-gradient(45deg, rgba(0, 191, 255, .5), rgba(0, 191, 255, .5) 1px, transparent 1px, transparent 15px),
+       -webkit-repeating-linear-gradient(-45deg, rgba(255, 105, 180, .5), rgba(255, 105, 180, .5) 1px, transparent 1px, transparent 15px);
+    background-image:
+       -moz-repeating-linear-gradient(45deg, rgba(0, 191, 255, .5), rgba(0, 191, 255, .5) 1px, transparent 1px, transparent 15px),
+       -moz-repeating-linear-gradient(-45deg, rgba(255, 105, 180, .5), rgba(255, 105, 180, .5) 1px, transparent 1px, transparent 15px);
+    background-image:
+       -o-repeating-linear-gradient(45deg, rgba(0, 191, 255, .5), rgba(0, 191, 255, .5) 1px, transparent 1px, transparent 15px),
+       -o-repeating-linear-gradient(-45deg, rgba(255, 105, 180, .5), rgba(255, 105, 180, .5) 1px, transparent 1px, transparent 15px);
+    background-image:
+       repeating-linear-gradient(45deg, rgba(0, 191, 255, .5), rgba(0, 191, 255, .5) 1px, transparent 1px, transparent 15px),
+       repeating-linear-gradient(-45deg, rgba(255, 105, 180, .5), rgba(255, 105, 180, .5) 1px, transparent 1px, transparent 15px);
+  }
+
 
 p{
     text-align: justify;
+
 }
 
 img{
     max-width: 50%;
     height: auto;
+    
+}
+
+.img{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 5px 6px black;
 }
 
 
@@ -62,7 +106,7 @@ img{
     bottom: 40px;
     left: 50%;
     margin-left: -76px;    
-    background-color: #fff;
+    background-color: #505050;
     background-image: linear-gradient(rgba(0,0,0,.1), rgba(255,255,255,0));     
     box-shadow: 1px 1px 0 #555,
                 2px 2px 0 #555,
@@ -74,7 +118,7 @@ img{
 .tooltip-content:after,
 .tooltip-content:before {
     border-right: 16px solid transparent;
-    border-top: 15px solid #fff;
+    border-top: 15px solid #4b4747;
     bottom: -15px;
     content: "";
     position: absolute;
@@ -93,4 +137,36 @@ img{
     opacity: 1;
     visibility: visible;
     bottom: 30px;       
+}
+
+.stitched {
+    padding: 20px;
+    margin: 10px;
+    background: #ff0030;
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.3em;
+    border: 2px dashed #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    text-shadow: -1px -1px #aa3030;
+    font-weight: normal;
+ }
+
+ .layered-paper {
+    background: #555;
+    box-shadow:
+        0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
+        0 10px 0 -5px #555, /* The second layer */
+        0 10px 1px -4px rgba(0,0,0,0.15), /* The second layer shadow */
+        0 20px 0 -10px #555, /* The third layer */
+        0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
+}
+
+.three-col {
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
 }
