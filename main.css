@@ -20,11 +20,7 @@ a:hover{
 h1{
     text-align: center;
 }
-body{
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 300;
-    text-align: center;
-}
+
 
 .borders {
     position: relative;
@@ -46,6 +42,9 @@ p:first-letter{
     font-size:250%;
    }
 body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    
     height: 200px;
     margin: 0 0 20px 0;
     background-color: #eaeaea;
@@ -71,15 +70,26 @@ p{
 }
 
 img{
-    max-width: 50%;
+    width: 30%;
     height: auto;
-    
+    margin-left: auto;
+    margin-right: auto;
+    border: #f00 solid 2px;
+    box-shadow: 3px 3px 5px 6px #f00;
 }
 
 .img{
-    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+
+    width: fit-content;
+  
+}
+.navwrapper{
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
     box-shadow: 3px 3px 5px 6px black;
 }
 
@@ -169,4 +179,13 @@ img{
     -moz-column-gap: 20px;
     -webkit-column-count: 3;
     -webkit-column-gap: 20px;
+}
+
+.hwRequirements{
+   
+    margin: auto;
+    width: fit-content;
+  border: 3px solid black;
+  padding: 10px;
+    
 }
